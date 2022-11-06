@@ -22,7 +22,11 @@
         });
         socket.on('nuevo-mensaje', function( payload ) {
             console.log('Escuchando', payload)
-        })
+        });
+        socket.on('active-bands', function(payload) {
+            console.clear();
+            console.table(payload);
+        });
     </script>
 </body>
 </html>
