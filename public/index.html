@@ -20,7 +20,7 @@
         socket.emit('mensaje', {
             nombre: 'Erick'
         });
-        socket.on('mensaje', function( payload ) {
+        socket.on('nuevo-mensaje', function( payload ) {
             console.log('Escuchando', payload)
         })
     </script>
